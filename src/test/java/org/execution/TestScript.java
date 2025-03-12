@@ -34,12 +34,12 @@ public class TestScript extends ParaBankBase {
 
 		WebElement login = loginValidationPage.getLogin();
 		paraBankBase.ClickByJava(login);
-		
+
 //		paraBankBase.ScreenCature2();
 //		paraBankBase.ScreenType("loginHotelimage");
 //		paraBankBase.ScreenCature2();
 		System.out.println("screen capture1");
-		
+
 		System.out.println("login successfully");
 
 	}
@@ -125,9 +125,8 @@ public class TestScript extends ParaBankBase {
 
 		WebElement booknow = BookHotel.getBooknow();
 		paraBankBase.ClickByJava(booknow);
-		
-//		paraBankBase.ScreenCature2();
 
+//		paraBankBase.ScreenCature2();
 
 		System.out.println("text2");
 
@@ -136,13 +135,9 @@ public class TestScript extends ParaBankBase {
 
 		} catch (Exception e) {
 		}
-		
-		
-	
-	
-		
+
 //		WebElement mylitnarypage = bookingConfirmation.getMylitnarypage();
-	//	paraBankBase.ClickByJSE(mylitnarypage);
+		// paraBankBase.ClickByJSE(mylitnarypage);
 //		mylitnarypage.click();
 	}
 
@@ -154,30 +149,29 @@ public class TestScript extends ParaBankBase {
 			System.out.println("validation 5");
 
 		}
-		
+
 		WebElement mylitnarypage = bookingConfirmation.getMylitnarypage();
 		paraBankBase.ClickByJava(mylitnarypage);
 		System.out.println("login successfully3");
 
-		
 		if (bookingConfirmation.getBookedIt().isDisplayed()) {
 			System.out.println("bookit success");
-			
+
 		}
-		
+
 		WebElement checkBox = bookingConfirmation.getCheckBox();
 		paraBankBase.ClickByJava(checkBox);
-		
+
 		WebElement cancel = bookingConfirmation.getCancel();
 		paraBankBase.ClickByJava(cancel);
-		
+
 		driver.switchTo().alert().accept();
-		
+
 		WebElement logout = bookingConfirmation.getLogout();
 		paraBankBase.ClickByJava(logout);
-		
-//		paraBankBase.ScreenCature2();
 
-		
+//		paraBankBase.ScreenCature2();
+		System.out.println("gitbash dev to master");
+
 	}
 }
